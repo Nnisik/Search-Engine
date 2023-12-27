@@ -19,12 +19,17 @@
         <h1>Search</h1>
         <img src="/img/icons8-search-50.png" alt="extra icon" class="adv-icon">
       </div>
-      <form action="https://www.google.com/search">
-        <input type="text" name="q" />
-        <input type="text" name="as_epq" />
-        <input type="text" name="as_oq" />
-        <input type="number" name="as_nlo" />
-        <input type="number" name="as_nhi" />
+      <form action="https://www.google.com/search" class="adv-form">
+        <input placeholder="All this words" type="text" name="as_q" autocomplete="off" />
+        <input placeholder="This exact word or phrase" type="text" name="as_epq" autocomplete="off" />
+        <input placeholder="Any of these words" type="text" name="as_oq" autocomplete="off" />
+        <input placeholder="None of this words" type="text" name="as_eq" autocomplete="off" />
+        <div class="adv_numb-range">
+          Number ranging from
+          <input type="number" name="as_nlo" autocomplete="off"/>
+          to
+          <input type="number" name="as_nhi" autocomplete="off"/>
+        </div>
         <button type="submit">google search</button>
       </form>
     </div>
