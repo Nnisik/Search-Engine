@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400&display=swap" rel="stylesheet">
     <title>Search</title>
   </head>
   <body>
@@ -11,9 +14,15 @@
         <a href="./index.html"><button>Search</button></a>
         <a href="./index-adv.html"><button>Advanced</button></a>
     </div>
-    <form action="https://www.google.com/imghp?search">
-      <input type="text" name="q" />
-      <input type="submit" value="google search" />
-    </form>
+    <div class="main">
+      <div class="main-header">
+        <h1>Search</h1>
+        <img src="/img/icons8-image-50.png" alt="extra icon" class="img-icon">
+      </div>
+      <form action="https://www.google.com/imghp?search">
+        <input type="text" name="q" />
+        <button type="submit">google search</button>
+      </form>
+    </div>
   </body>
 </html>
