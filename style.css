@@ -143,11 +143,3 @@ form > button:hover {
     background: teal;
     color: white;
 }
-/*
-.header button:hover {
-    transition-duration: 0.3s;
-    transform: translate(-5px, -3px);
-    margin-left: 7px;
-    background: teal;
-    color: white;
-}
