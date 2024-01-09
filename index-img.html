@@ -3,26 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="./img/icons8-search-50.png">
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400&display=swap" rel="stylesheet">
     <title>Search</title>
   </head>
   <body>
-    <div class="header">
-        <a href="./index.html"><button>Search</button></a>
-        <a href="./index-adv.html"><button>Advanced</button></a>
+    <div class="flex nav">
+      <a class="flex flex-column btn nav-button link-btn" 
+      href="./index.html">
+        <img class="btn-image" src="./img/icons8-search-50.png">
+        Search
+      </a>
+      <a class="flex flex-column btn nav-button link-btn" 
+      href="./index-adv.html">
+        <img class="btn-image" src="./img/icons8-search-50.png">
+        Adv
+      </a>
     </div>
-    <div class="main">
-      <div class="main-header">
-        <h1>Search</h1>
-        <img src="/img/icons8-image-50.png" alt="extra icon" class="img-icon">
+    <div class="center container">
+      <div class="flex center-text">
+          <h1 class="header-search">Search</h1>
+          <img class="header-icon" src="./img/icons8-image-50.png">
       </div>
-      <form action="https://www.google.com/imghp?search">
-        <input type="text" name="q" autocomplete="off" />
-        <button type="submit">google search</button>
+      <form class="search-form search-input-area" action="https://www.google.com/search?tbm=isch">
+        <input type="hidden" name="tbm" value="isch">
+        <input class="input search-form-element" type="text" name="q" placeholder="..." autocomplete="off" />
+        <button class="btn search-form-btn search-form-element" type="submit">google search</button>
       </form>
-    </div>
+  </div>
   </body>
 </html>
