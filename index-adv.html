@@ -10,27 +10,35 @@
     <title>Search</title>
   </head>
   <body>
-    <div class="header">
-        <a href="./index.html"><button>Search</button></a>
-        <a href="./index-img.html"><button>Image</button></a>
+    <div class="flex nav">
+        <a class="flex flex-column btn nav-button link-btn" 
+        href="./index.html">
+          <img class="btn-image" src="./img/icons8-search-50.png">
+          Search
+        </a>
+        <a class="flex flex-column btn nav-button link-btn" 
+        href="./index-img.html">
+          <img class="btn-image" src="./img/icons8-image-50.png">
+          Image
+        </a>
     </div>
-    <div class="main">
-      <div class="main-header">
-        <h1>Search</h1>
-        <img src="/img/icons8-search-50.png" alt="extra icon" class="adv-icon">
-      </div>
-      <form action="https://www.google.com/search" class="adv-form">
-        <input placeholder="All this words" type="text" name="as_q" autocomplete="off" />
-        <input placeholder="This exact word or phrase" type="text" name="as_epq" autocomplete="off" />
-        <input placeholder="Any of these words" type="text" name="as_oq" autocomplete="off" />
-        <input placeholder="None of this words" type="text" name="as_eq" autocomplete="off" />
-        <div class="adv_numb-range">
+    <div class="center container adv-container">
+      <div class="flex center-text">
+        <h1 class="header-search">Search</h1>
+        <img class="header-icon" src="./img/icons8-search-50.png">
+    </div>
+      <form class="flex flex-column search-form adv-search-form search-input-area" action="https://www.google.com/search" class="adv-form">
+        <input class="input light-input search-form-element adv-input" placeholder="All this words" type="text" name="as_q" autocomplete="off" />
+        <input class="input light-input search-form-element adv-input" placeholder="This exact word or phrase" type="text" name="as_epq" autocomplete="off" />
+        <input class="input light-input search-form-element adv-input" placeholder="Any of these words" type="text" name="as_oq" autocomplete="off" />
+        <input class="input light-input search-form-element adv-input" placeholder="None of this words" type="text" name="as_eq" autocomplete="off" />
+        <div class="flex adv-inut-numb_range">
           Number ranging from
-          <input type="number" name="as_nlo" autocomplete="off"/>
+          <input class="input adv-inut-numb_range-input light-input" type="number" name="as_nlo" autocomplete="off"/>
           to
-          <input type="number" name="as_nhi" autocomplete="off"/>
+          <input class="input adv-inut-numb_range-input light-input" type="number" name="as_nhi" autocomplete="off"/>
         </div>
-        <button type="submit">google search</button>
+        <button class="btn search-form-btn search-form-element adv-search-form-btn" type="submit">google search</button>
       </form>
     </div>
   </body>
