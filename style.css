@@ -5,7 +5,6 @@
     --main-font: 'Titillium Web';
     --addit-font: sans-serif;
     --detail-color-light: rgba(218, 253, 240, 0.7);
-    --detail-color-dark: rgb(140, 170, 164);
 }
 
 * {
@@ -118,7 +117,12 @@ body {
 .search-form-btn {
     width: 23%;
     transform: translate(10px, -0.5px);
-    background: rgb(211, 234, 222);
+
+    background: linear-gradient(90deg,
+        rgb(211, 234, 222),
+        rgb(211, 234, 222), 
+        rgb(211, 234, 222), 
+        var(--transparent));
     border-radius: 15px;
 }
 
@@ -166,4 +170,5 @@ body {
     height: 48px;
     width: 142px;
     margin: 12px auto;
+    background: rgb(211, 234, 222);
 }
