@@ -3,41 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400&display=swap"
+      rel="stylesheet"/>
     <title>Search</title>
   </head>
   <body>
     <div class="flex nav">
-        <a class="flex flex-column btn nav-button link-btn" 
+      <a class="flex flex-column btn nav-button link-bnt btn-search-icon"
         href="./index.html">
-          <img class="btn-image" src="./img/icons8-search-50.png">
-          Search
-        </a>
-        <a class="flex flex-column btn nav-button link-btn" 
+        <p>Search</p>
+      </a>
+      <a class="flex flex-column btn nav-button link-bnt btn-img-icon"
         href="./index-img.html">
-          <img class="btn-image" src="./img/icons8-image-50.png">
-          Image
-        </a>
+        <p>Image</p>
+      </a>
     </div>
     <div class="center container adv-container">
       <div class="flex center-text">
         <h1 class="header-search">Search</h1>
-        <img class="header-icon" src="./img/icons8-search-50.png">
-    </div>
+        <img class="header-icon" src="./img/icons8-search-50.png" />
+      </div>
       <form class="flex flex-column search-form adv-search-form search-input-area" action="https://www.google.com/search" class="adv-form">
-        <input class="input light-input search-form-element adv-input" placeholder="All this words" type="text" name="as_q" autocomplete="off" />
-        <input class="input light-input search-form-element adv-input" placeholder="This exact word or phrase" type="text" name="as_epq" autocomplete="off" />
-        <input class="input light-input search-form-element adv-input" placeholder="Any of these words" type="text" name="as_oq" autocomplete="off" />
-        <input class="input light-input search-form-element adv-input" placeholder="None of this words" type="text" name="as_eq" autocomplete="off" />
-        <div class="flex adv-inut-numb_range">
-          Number ranging from
-          <input class="input adv-inut-numb_range-input light-input" type="number" name="as_nlo" autocomplete="off"/>
-          to
-          <input class="input adv-inut-numb_range-input light-input" type="number" name="as_nhi" autocomplete="off"/>
-        </div>
+        <input class="input light-input search-form-element adv-input" placeholder="All this words" type="text" name="as_q" autocomplete="off"/>
+        <input class="input light-input search-form-element adv-input" placeholder="This exact word or phrase" type="text" name="as_epq" autocomplete="off"/>
+        <input class="input light-input search-form-element adv-input" placeholder="Any of these words" type="text" name="as_oq" autocomplete="off"/>
+        <input class="input light-input search-form-element adv-input" placeholder="None of this words" type="text" name="as_eq" autocomplete="off"/>
         <button class="btn search-form-btn search-form-element adv-search-form-btn" type="submit">google search</button>
       </form>
     </div>

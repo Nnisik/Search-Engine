@@ -1,5 +1,5 @@
 :root {
-    --main-bg-color: rgb(235, 235, 235);
+    --main-bg-color: rgb(255, 255, 255);
     --main-txt-color: rgb(22, 22, 22);
     --transparent: transparent;
     --main-font: 'Titillium Web';
@@ -26,30 +26,37 @@ body {
 }
 
 .nav {
+    height: 50px;
     justify-content: end;
-    background: var(--transparent);
 }
 
 .btn {
     cursor: pointer;
-    font-family: var(--main-font), var(--addit-font);
+    font-family: 
+        var(--main-font), 
+        var(--addit-font);
 }
 
 .nav-button {
-    width: 4vh;
-    padding: 5px 25px 0;
+    padding: 5px 15px 0;
     text-align: center;
 }
 
-.link-btn {
+.nav-button > p {
+    transform: translate(-12px, 35px);
+}
+
+.link-bnt {
     text-decoration: none;
-    font-size: 16px;
+    font-family: var(--main-font);
     font-weight: bold;
+    letter-spacing: 1px;
     color: var(--main-txt-color);
 }
 
 .btn-image {
-    aspect-ratio: 1/1;
+    height: 50px;
+    width: 50px;
 }
 
 .center {
@@ -73,11 +80,8 @@ body {
 }
 
 .header-icon {
-    transform: translate(-10px, 80px);
-}
-
-.header-icon {
-    height: 30px;
+    transform: translate(-25px, 65px);
+    height: 50px;
     aspect-ratio: 1/1;
 }
 
@@ -96,7 +100,9 @@ body {
 .search-form-element {
     height: 100%;
     font-size: 18px;
-    font-family: var(--main-font), var(--addit-font);
+    font-family: 
+        var(--main-font), 
+        var(--addit-font);
     border: none;
     outline: none;
 }
@@ -115,9 +121,8 @@ body {
 }
 
 .search-form-btn {
-    width: 23%;
+    width: 20%;
     transform: translate(10px, -0.5px);
-
     background: linear-gradient(90deg,
         rgb(211, 234, 222),
         rgb(211, 234, 222), 
@@ -171,4 +176,25 @@ body {
     width: 142px;
     margin: 12px auto;
     background: rgb(211, 234, 222);
+}
+
+.btn-search-icon,
+.btn-img-icon {
+    transition-duration: 0.3s;
+}
+
+.btn-search-icon {
+    background: url(./img/icons8-search-50.png) no-repeat;
+}
+
+.btn-search-icon:hover {
+    background: url(./img/gif/icons8-search.gif) no-repeat;
+}
+
+.btn-img-icon {
+    background: url(./img/icons8-image-50.png) no-repeat;
+}
+
+.btn-img-icon:hover {
+    background: url(./img/gif/icons8-image.gif) no-repeat;
 }
