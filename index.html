@@ -4,32 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./img/icons8-search-50.png" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400&display=swap"
-      rel="stylesheet"/>
+    <link rel="stylesheet" href="./style/style.css" />
     <title>Search</title>
   </head>
   <body>
-    <div class="flex nav">
-      <a class="flex flex-column btn nav-button link-bnt btn-img-icon"
-        href="./index-img.html">
-        <p>Image</p>
-      </a>
-      <a class="flex flex-column btn nav-button link-bnt btn-search-icon"
-        href="./index-adv.html">
-        <p>Adv</p>
-      </a>
+    <div class="nav">
+      <a href="./index-img.html">Images</a>
+      <a href="./index-adv.html">Advanced</a>
     </div>
-    <div class="center container">
-      <div class="flex center-text">
-        <h1 class="header-search">Search</h1>
-        <img class="header-icon" src="./img/icons8-search-50.png" />
-      </div>
-      <form class="search-form search-input-area" action="https://www.google.com/search">
-        <input class="input search-form-element" type="text" name="q" placeholder="..." autocomplete="off"/>
-        <button class="btn search-form-btn search-form-element" type="submit">google search</button>
+    <div class="container">
+      <h1>Google</h1>
+      <form action="https://www.google.com/search">
+        <input type="text" name="q" autocomplete="off">
+        <div>
+          <button type="submit">Google Search</button>
+          <button><a href="https://www.doodles.google.com">I'm Feeling Lucky</a></button>
+        </div>
       </form>
     </div>
   </body>
