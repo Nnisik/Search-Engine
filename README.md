@@ -4,7 +4,7 @@ Front-end for Google Search, Google Image Search, and Google Advanced Search.
 
 ## Technologies used
 * HTML
-* Sass
+* SCC
 
 ## Funtionality
 * Searching on the Google Search page takes to the Google search results for that page.
@@ -16,3 +16,12 @@ Front-end for Google Search, Google Image Search, and Google Advanced Search.
   * “none of these words:”
 * "I'm Feeling Lucky" button sends directly to the first Google search result for the query
 
+## Testing
+Does not required testing.
+
+## Issues
+No issues found.
+
+## Badges
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)

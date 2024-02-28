@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/style.css" />
     <title>Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="nav">
@@ -14,10 +20,15 @@
     <div class="container">
       <h1>Google</h1>
       <form action="https://www.google.com/search">
-        <input type="text" name="q" autocomplete="off">
+        <div class="form-input">
+          <img src="./assets/icons8-search-16.png" alt="" />
+          <input type="text" name="q" autocomplete="off" />
+        </div>
         <div>
           <button type="submit">Google Search</button>
-          <button><a href="https://www.doodles.google.com">I'm Feeling Lucky</a></button>
+          <button>
+            <a href="https://doodles.google/">I'm Feeling Lucky</a>
+          </button>
         </div>
       </form>
     </div>

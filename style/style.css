@@ -34,15 +34,16 @@ button, a {
   position: absolute;
   top: 45%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -70%);
   text-align: center;
   color: rgb(8, 8, 8);
 }
 
 .container h1 {
-  font-size: 80px;
+  font-size: 90px;
   font-weight: 600;
-  font-family: Arial, sans-serif;
+  letter-spacing: 0ch;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .container h5 {
@@ -54,21 +55,33 @@ button, a {
   letter-spacing: 2px;
 }
 
-.container input {
-  width: 500px;
+.form-input {
+  width: 550px;
   height: 40px;
   margin: 24px 0;
-  padding: 0 30px;
+  padding: 0 15px;
   border-radius: 20px;
   border: 1px solid rgb(185, 185, 185);
+  display: flex;
+}
+
+.container img {
+  margin: auto;
+  transform: scale(-1, 1);
+}
+
+.container input {
+  border: none;
   outline: none;
+  width: calc(100% - 16px);
+  padding: 0 30px;
 }
 
 .container button {
   width: 150px;
   height: 30px;
   margin: 0 5px;
-  background: rgb(221, 221, 221);
+  background: whitesmoke;
   color: rgb(8, 8, 8);
   text-decoration: none;
   font-size: 13px;
@@ -85,6 +98,4 @@ button, a {
 .container button:hover {
   border: 1px solid rgb(158, 158, 158);
   border-radius: 7px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
